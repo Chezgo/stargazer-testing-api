@@ -1,0 +1,14 @@
+# Keycloak Configuration
+keycloak.url=https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+keycloak.client.id=stargazer
+
+# Admin credentials
+keycloak.admin.username=YOUR_ADMIN_USERNAME
+keycloak.admin.password=YOUR_ADMIN_PASSWORD
+
+# User credentials
+keycloak.user.username=YOUR_USER_USERNAME
+keycloak.user.password=YOUR_USER_PASSWORD
+
+# API Configuration
+api.base.url=https://api.our-galaxy.space/stargazer-service

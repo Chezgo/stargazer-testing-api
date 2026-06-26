@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Validation Error Response Schema (400)",
+  "type": "object",
+  "required": ["error", "errorMessage"],
+  "properties": {
+    "error": {
+      "type": "string",
+      "const": "Validation Failed"
+    },
+    "errorMessage": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}
