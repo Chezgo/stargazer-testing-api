@@ -28,4 +28,8 @@ public class BaseApiTest {
     public static void setCurrentTestName(String testName) {
         elasticsearchFilter.setCurrentTestName(testName);
     }
+
+    public static void setCurrentTokenType(String tokenType) {
+        elasticsearchFilter.setCurrentTokenType(tokenType);
+    }
 }

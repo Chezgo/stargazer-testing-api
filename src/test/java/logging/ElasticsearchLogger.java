@@ -10,14 +10,17 @@ import org.elasticsearch.client.RestClient;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ElasticsearchLogger {
 
-    private static final String ELASTICSEARCH_URL = "http://localhost:9200";
     private static final String INDEX_NAME = "api-test-logs";
+    private static final ZoneId MOSCOW_ZONE = ZoneId.of("Europe/Moscow");
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
 
     private static final ElasticsearchClient client;
 
@@ -35,13 +38,14 @@ public class ElasticsearchLogger {
                                   int statusCode, long responseTime, String tokenType) {
         try {
             Map<String, Object> document = new HashMap<>();
-            document.put("timestamp", LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+            ZonedDateTime now = ZonedDateTime.now(MOSCOW_ZONE);
+            document.put("timestamp", now.format(FORMATTER));
             document.put("testName", testName);
             document.put("method", method);
             document.put("url", url);
             document.put("statusCode", statusCode);
             document.put("responseTime", responseTime);
-            document.put("tokenType", tokenType);
+            document.put("tokenType", tokenType != null ? tokenType : "Unknown");
             document.put("success", statusCode >= 200 && statusCode < 300);
 
             IndexRequest<Map<String, Object>> request = IndexRequest.of(i -> i

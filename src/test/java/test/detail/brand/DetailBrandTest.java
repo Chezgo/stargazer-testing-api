@@ -51,6 +51,7 @@ public class DetailBrandTest extends BaseApiTest {
     public void getAllDetailBrand(DataTestGetAllDetailBrand dataTest) {
         log.info("Тест: {}", dataTest.getTestName());
         BaseApiTest.setCurrentTestName(dataTest.getTestName());
+        BaseApiTest.setCurrentTokenType(dataTest.getTokenType().name());
 
         // Получаем токен по типу
         String token = getTokenByType(dataTest.getTokenType());
@@ -73,6 +74,7 @@ public class DetailBrandTest extends BaseApiTest {
     public void createDetailBrandTest(DataTestCreateDetailBrand dataTest){
         log.info("Тест: {}", dataTest.getTestName());
         BaseApiTest.setCurrentTestName(dataTest.getTestName());
+        BaseApiTest.setCurrentTokenType(dataTest.getTokenType().name());
 
         // Получаем токен по типу
         String token = getTokenByType(dataTest.getTokenType());
