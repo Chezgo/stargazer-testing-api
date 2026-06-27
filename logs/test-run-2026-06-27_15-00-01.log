@@ -1,0 +1,1772 @@
+========================================
+Запуск тестов: 2026-06-27_15-00-01
+========================================
+Обновление кода из Git...
+Из github.com:Chezgo/stargazer-testing-api
+ * branch            main       -> FETCH_HEAD
+Уже актуально.
+Запуск Maven тестов...
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.example:stargazer-testing-api[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding stargazer-testing-api 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/supernatural/tests/stargazer-testing-api/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/supernatural/tests/stargazer-testing-api/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/supernatural/tests/stargazer-testing-api/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 9 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 20 source files to /home/supernatural/tests/stargazer-testing-api/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.2.5:test[m [1m(default-test)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running [1mTestSuite[m
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Тесты стратовали
+Логи включили
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:15 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MTUsImlhdCI6MTc4MjU2MTYxNSwianRpIjoib25ydHJvOjE5MGVkNjBmLTcyMzUtNDlmMy05NWUzLTU2NDViMzlmYjYxOCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI2OTBmOWYyYy01NDhkLTQ0NjktYWRmMy1hMmZlODBhNmMwOGYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.e8nJjuLVJFvLBQ-GaGM7Q2vc3RdP-4jaAyYVOKacMneFLt98YppSPir5QDkdOp03t1KjcgC4UDOF-pQN8dFeB22bLf0FqeK15gdo9YzInB-uHsD39I1OLVuglRrczlUUXDGgzIhLyw8LSnA8S4hW50DCD7Bfe3Fc2CFdqQu9wrTRbBnpsQT3sYWbCZrHj2HzoWzecbkeGlsMRnGHS8Ghr04IYy6xbUJZir-DJToDRZi0j2hK1dqvr5eUWCZRfg2yT3dnxF88a7MUynw_izSOT2m17uAmR9Isrw93ByvKFc0G8wUT3TxYnksQvJ90bxXNH9_Yy-KWA98xRIg0av6iUA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MTUsImlhdCI6MTc4MjU2MTYxNSwianRpIjoiOTY2NDg0YmQtZDE0MS00ZWRjLTk0MjItYTNkODJkMTE3ZGRjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjY5MGY5ZjJjLTU0OGQtNDQ2OS1hZGYzLWEyZmU4MGE2YzA4ZiIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.8ZyuXvsK_yKWCmNbhVy3VThXOHHznaHYhMwrTjp0zkDauoSU4iaYmfoOGFSU07mqmuoAOcQsZJ3zeEDsQ3o8Gw",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "690f9f2c-548d-4469-adf3-a2fe80a6c08f",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MTUsImlhdCI6MTc4MjU2MTYxNSwianRpIjoib25ydHJvOjE5MGVkNjBmLTcyMzUtNDlmMy05NWUzLTU2NDViMzlmYjYxOCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI2OTBmOWYyYy01NDhkLTQ0NjktYWRmMy1hMmZlODBhNmMwOGYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.e8nJjuLVJFvLBQ-GaGM7Q2vc3RdP-4jaAyYVOKacMneFLt98YppSPir5QDkdOp03t1KjcgC4UDOF-pQN8dFeB22bLf0FqeK15gdo9YzInB-uHsD39I1OLVuglRrczlUUXDGgzIhLyw8LSnA8S4hW50DCD7Bfe3Fc2CFdqQu9wrTRbBnpsQT3sYWbCZrHj2HzoWzecbkeGlsMRnGHS8Ghr04IYy6xbUJZir-DJToDRZi0j2hK1dqvr5eUWCZRfg2yT3dnxF88a7MUynw_izSOT2m17uAmR9Isrw93ByvKFc0G8wUT3TxYnksQvJ90bxXNH9_Yy-KWA98xRIg0av6iUA
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 200 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: a4f55d35-84ff-4925-b55d-3584ffc925a8
+X-Gravitee-Request-Id: a4f55d35-84ff-4925-b55d-3584ffc925a8
+
+{
+    "id": 80,
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:21 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjEsImlhdCI6MTc4MjU2MTYyMSwianRpIjoib25ydHJvOjQ4ZWJlN2QxLWVjMzctNGZjNy1iNGI0LTgyMGYzMmFjNDg4OCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI1MDdlZmFhOC0yYTlhLTQxNzEtYjNkMC02MGExMDhmOTk3MWIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.Edl8eSfOClr5g1vNaB1v9MzA5b1uQxqwiTBqfiD_FuMSifH_mFqWP-Y0JyLjyqqTk1mY20TshX-wyr4hfqjxx7ZgQpVmNA-40dB3PrveEhajbOlhNHdax87KA2aJACskeYET87HzdtpWiR__MiBHPa5uLtSY_VG5c3Opbrud9rrhnH1j04iGeoODsNOFhnz4Hyi2-ko7nW5O7PptM2wZyu_vHA91-EYHadm9yLDYdB-z390PwaAPBq6ABx1QU2dWiKEL6_lH62saobuOlDWRDFcc3uQ4appDiAZiUuuNG8htlyj59DE-koNm0L8SD9wV_OtgLQa2Jjff-vVxsNmy7A",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjEsImlhdCI6MTc4MjU2MTYyMSwianRpIjoiOTU5MzUwN2EtZWU0ZS00YTg1LThlNTUtZjc3NDgzMDc5ZDVkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjUwN2VmYWE4LTJhOWEtNDE3MS1iM2QwLTYwYTEwOGY5OTcxYiIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.j0w5yS6yQmAr-7yz0_EtL2LMYdk3diV0DrM3tQdiCH99jcWMs55Q0D2ug3_Q6Hyh0lkbWXnBjiEo2ExWMS3HVQ",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "507efaa8-2a9a-4171-b3d0-60a108f9971b",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	DELETE
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail/80
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjEsImlhdCI6MTc4MjU2MTYyMSwianRpIjoib25ydHJvOjQ4ZWJlN2QxLWVjMzctNGZjNy1iNGI0LTgyMGYzMmFjNDg4OCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI1MDdlZmFhOC0yYTlhLTQxNzEtYjNkMC02MGExMDhmOTk3MWIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.Edl8eSfOClr5g1vNaB1v9MzA5b1uQxqwiTBqfiD_FuMSifH_mFqWP-Y0JyLjyqqTk1mY20TshX-wyr4hfqjxx7ZgQpVmNA-40dB3PrveEhajbOlhNHdax87KA2aJACskeYET87HzdtpWiR__MiBHPa5uLtSY_VG5c3Opbrud9rrhnH1j04iGeoODsNOFhnz4Hyi2-ko7nW5O7PptM2wZyu_vHA91-EYHadm9yLDYdB-z390PwaAPBq6ABx1QU2dWiKEL6_lH62saobuOlDWRDFcc3uQ4appDiAZiUuuNG8htlyj59DE-koNm0L8SD9wV_OtgLQa2Jjff-vVxsNmy7A
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:21 GMT
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: d8426c59-2af2-431e-826c-592af2331e91
+X-Gravitee-Request-Id: d8426c59-2af2-431e-826c-592af2331e91
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:21 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjEsImlhdCI6MTc4MjU2MTYyMSwianRpIjoib25ydHJvOjY3ZjQ2ZmY1LTM4MjAtNDdiZi1iMjBiLWQzZTQ4NjJkNDM4NyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJjNDY5YzAzYy0xMzZlLTQwMTEtOTJhYi1jNGRkMjBhMTlhMTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.cYUUku7aQO-dAvUyVMSjxfGAp7iF1ODagBJxOL6oIYvu0hewPBfNXq9n2-RFg7GGdWv2Ipp77Vi5q5c1BZvU6t_eyU13fRfE7sD7gxtcx_xVKPiNWfIJTScfV8j7SEYiz0TivcEY9as7y8BeSQ6fSvYel7wih4bnrQwtxLIr0Bo7wEYBeJ-yjzs8plegiduxfRBgs-lFYb3Ud-3wfwD2YCIFsGKCtEjzwWP9BJSOINY4XbTzI2Jn4DyH57pAYpl9exKWyWwjLwtWMpz7Lm8u-ym-N6i_Jk5Vb4vG1oiJAFpEVZNsgQYz6hKu26V2A0yWgOPOWkLKMKynCRcHlRmqRA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjEsImlhdCI6MTc4MjU2MTYyMSwianRpIjoiNGNlODgwYzQtM2MwNy00OTQ3LTlmYzktMzFmZTE2MjhmMjYwIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6ImM0NjljMDNjLTEzNmUtNDAxMS05MmFiLWM0ZGQyMGExOWExNyIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.4YYxfyOpNOGDURuraKv92aqOgum4IQAWUPLnte4PliVnmKC2JcMI9PCxCDn9ABO3lioAmXjrpSZcHVoPL7QJdA",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "c469c03c-136e-4011-92ab-c4dd20a19a17",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjEsImlhdCI6MTc4MjU2MTYyMSwianRpIjoib25ydHJvOjY3ZjQ2ZmY1LTM4MjAtNDdiZi1iMjBiLWQzZTQ4NjJkNDM4NyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJjNDY5YzAzYy0xMzZlLTQwMTEtOTJhYi1jNGRkMjBhMTlhMTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.cYUUku7aQO-dAvUyVMSjxfGAp7iF1ODagBJxOL6oIYvu0hewPBfNXq9n2-RFg7GGdWv2Ipp77Vi5q5c1BZvU6t_eyU13fRfE7sD7gxtcx_xVKPiNWfIJTScfV8j7SEYiz0TivcEY9as7y8BeSQ6fSvYel7wih4bnrQwtxLIr0Bo7wEYBeJ-yjzs8plegiduxfRBgs-lFYb3Ud-3wfwD2YCIFsGKCtEjzwWP9BJSOINY4XbTzI2Jn4DyH57pAYpl9exKWyWwjLwtWMpz7Lm8u-ym-N6i_Jk5Vb4vG1oiJAFpEVZNsgQYz6hKu26V2A0yWgOPOWkLKMKynCRcHlRmqRA
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 31d32ade-cd35-4ac5-932a-decd35eac55c
+X-Gravitee-Request-Id: 31d32ade-cd35-4ac5-932a-decd35eac55c
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "name": "Имя бренда должно быть от 3 до 50 символов"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOmVlODNjOTE5LWQwMzMtNDBkZC04ZjYzLTVlZDIzNDAyMDE4MSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI4Y2QxZDdiYy01MDQ3LTRjZmItOGRhYS03Y2MzNzNlODA5ZGEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.pr6B7RgR-IZRGXrs3zeiOVkV5OuCeobBVxUGfd9d0-4FPQZB2MG3vS9LF5gQp7vbPJP_jKF7i-JqtC78IXYb9hy-N5MBzsJHqX-Aor10s8idq_yorUVmxkBfpQFLBshtRMS2Foze87S80-UggSjHUhBMXx7nqhObTMxszjQM7dE_w0kcL55Rn9npA-yKtK8JNSvKiH20HNSCNCp_4nIHSIa_4GSp0mh28Wwp8VeHXv08w1Z2KhuLLk1XEpi76KZXhpebz0WbBp_K1GA52gVWUB-AvWJjFpT3Ayxrq7Uz1kCrsnWtcMgixWxngMyr4M-50f8JeaoGCXxBnK-oPWO2FA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiYjdmMzk5MzYtN2U2YS00YzY0LWIwZDQtMDQ5YTFlMmU3ZGNjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjhjZDFkN2JjLTUwNDctNGNmYi04ZGFhLTdjYzM3M2U4MDlkYSIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.xbGL3XGs62nJlMkE7K8sGBkovi0tOJNbusLoIoe0_yywvtFlkd8fMDDGF2bETIMF-LEz7h1mKo3imDOw8B-2Ug",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "8cd1d7bc-5047-4cfb-8daa-7cc373e809da",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOmVlODNjOTE5LWQwMzMtNDBkZC04ZjYzLTVlZDIzNDAyMDE4MSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI4Y2QxZDdiYy01MDQ3LTRjZmItOGRhYS03Y2MzNzNlODA5ZGEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.pr6B7RgR-IZRGXrs3zeiOVkV5OuCeobBVxUGfd9d0-4FPQZB2MG3vS9LF5gQp7vbPJP_jKF7i-JqtC78IXYb9hy-N5MBzsJHqX-Aor10s8idq_yorUVmxkBfpQFLBshtRMS2Foze87S80-UggSjHUhBMXx7nqhObTMxszjQM7dE_w0kcL55Rn9npA-yKtK8JNSvKiH20HNSCNCp_4nIHSIa_4GSp0mh28Wwp8VeHXv08w1Z2KhuLLk1XEpi76KZXhpebz0WbBp_K1GA52gVWUB-AvWJjFpT3Ayxrq7Uz1kCrsnWtcMgixWxngMyr4M-50f8JeaoGCXxBnK-oPWO2FA
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Те",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 9ec4c726-f0e4-40fb-84c7-26f0e480fba1
+X-Gravitee-Request-Id: 9ec4c726-f0e4-40fb-84c7-26f0e480fba1
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "name": "Имя бренда должно быть от 3 до 50 символов"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjQ2OGY2MjYyLWI5ODQtNDIzNi1iY2U1LTRkMWM2MjA5Y2JjYSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJiYWY3NjVjNC05NTVjLTRkYjAtODc2Yi1lNDMwMjdmMDlmM2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.OwgUlthaZJDb5M63JzvZFn3uZ5t9pJ13acipackO8PA_LAyhPhLYPGRS1v2Eod-h0VbMOaeArMdI1ZCrUuJLhIF8wq-B6TGPp5ZcjAIoKo4OT8RXb-1ASqMvPqy0hPD5R2lg2vWQKQsHPp-A1iJt5Kn5TETuEz-MtTOEw7uK_doKsvJl8BCBH1pAERBOpE46rCvWTN1QXrPM3SpOdAkdb75urI_7X2zG6ZZdaO5b8vP9WZ0TkX52XoAR0AQVKRNyESZWXs8BPPKJsA3Vx1d6IjyO8WrJy3RNgL82vM3FavhKUCRn8XaSP2IcTO12HEQrNyJlTL61_JIo8W7V4Hddfw",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiMGExNzNmNTctODkxOS00ODhmLThmOGUtMmExODY2MThmNGVjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6ImJhZjc2NWM0LTk1NWMtNGRiMC04NzZiLWU0MzAyN2YwOWYzYyIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.UkEXIEOavPlWvOSyM-q-znz2wyVR8CLu2xx2LokfBsTJ5WBPPSIvOwDVRrjacOnIqMCk1maQ0afOLQt06BJPGw",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "baf765c4-955c-4db0-876b-e43027f09f3c",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjQ2OGY2MjYyLWI5ODQtNDIzNi1iY2U1LTRkMWM2MjA5Y2JjYSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJiYWY3NjVjNC05NTVjLTRkYjAtODc2Yi1lNDMwMjdmMDlmM2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.OwgUlthaZJDb5M63JzvZFn3uZ5t9pJ13acipackO8PA_LAyhPhLYPGRS1v2Eod-h0VbMOaeArMdI1ZCrUuJLhIF8wq-B6TGPp5ZcjAIoKo4OT8RXb-1ASqMvPqy0hPD5R2lg2vWQKQsHPp-A1iJt5Kn5TETuEz-MtTOEw7uK_doKsvJl8BCBH1pAERBOpE46rCvWTN1QXrPM3SpOdAkdb75urI_7X2zG6ZZdaO5b8vP9WZ0TkX52XoAR0AQVKRNyESZWXs8BPPKJsA3Vx1d6IjyO8WrJy3RNgL82vM3FavhKUCRn8XaSP2IcTO12HEQrNyJlTL61_JIo8W7V4Hddfw
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1234567890123456789012345678901234567890123456789052",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 0eea37d6-7413-4860-aa37-d6741388600f
+X-Gravitee-Request-Id: 0eea37d6-7413-4860-aa37-d6741388600f
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "name": "Имя бренда должно быть от 3 до 50 символов"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjEzYTlkYjM1LWYyMjktNDViMi1hZjI0LTM2NzVkYjAzYTE2MSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJiMmNlZTIxYi01ODU1LTQ0NzMtYjkxMS1lZThkN2MyZmM5YzUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.T-LO_aHSTfs7Q799JeJb1XVStY6jK6gCZNVb0-INyfpdTFwXawi3VODvQKOqw-w5kk7iuFlt14JKgH2LigqnLPEEDGsJsCP53Ntk0_6328IyT92-SU8tojQkpIDiIMtFqLCtwyexqGGVKxvWPj2F9XGbsOU9g_iFRCjF7jA4a7oBMv8jHuVxsaTryeyKg3yEeNNOuXqoHNEBb_OmHkXPXLNsVXMCYTv5fKPP5v1r8w_AIJ0uQM5mSCO0oNMAgIyUN4zrd5Zfwxt8nOx0tJhLoJCc1RK9d8Z0YxMfermmAlOf7RKSEmZ9Q0hqs7HLD-cMcvHNruPZQS9GJbNARr61uQ",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiM2ExZmY1NzYtYzhhNC00MDQwLWI3ZjgtNDliYjZmYTM1MWEzIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6ImIyY2VlMjFiLTU4NTUtNDQ3My1iOTExLWVlOGQ3YzJmYzljNSIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.A4jE9Efrz1DBATp4f0s37KSmBw3pgQ9q1T7GasUdvVlLEo9yJPWcD4m8It60kV7P41TBch_Pe0qOqymoPkt1tQ",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "b2cee21b-5855-4473-b911-ee8d7c2fc9c5",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjEzYTlkYjM1LWYyMjktNDViMi1hZjI0LTM2NzVkYjAzYTE2MSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJiMmNlZTIxYi01ODU1LTQ0NzMtYjkxMS1lZThkN2MyZmM5YzUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.T-LO_aHSTfs7Q799JeJb1XVStY6jK6gCZNVb0-INyfpdTFwXawi3VODvQKOqw-w5kk7iuFlt14JKgH2LigqnLPEEDGsJsCP53Ntk0_6328IyT92-SU8tojQkpIDiIMtFqLCtwyexqGGVKxvWPj2F9XGbsOU9g_iFRCjF7jA4a7oBMv8jHuVxsaTryeyKg3yEeNNOuXqoHNEBb_OmHkXPXLNsVXMCYTv5fKPP5v1r8w_AIJ0uQM5mSCO0oNMAgIyUN4zrd5Zfwxt8nOx0tJhLoJCc1RK9d8Z0YxMfermmAlOf7RKSEmZ9Q0hqs7HLD-cMcvHNruPZQS9GJbNARr61uQ
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": null,
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 0449e370-5fa2-4e6b-89e3-705fa25e6b09
+X-Gravitee-Request-Id: 0449e370-5fa2-4e6b-89e3-705fa25e6b09
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "name": "Имя бренда не должно быть null"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjM0NmQzNDJlLTQwN2UtNDJjZC05NjJlLTFmNDNhNzU5NDRhNyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiIwYzZjNjI5Yi1lN2Q0LTQ2ZmEtOGMwYy03OTg2OTgyNzYwNTgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.OwuCGOm-okC3EQMgKe-GYoDa2lzLnMmIncH3mOSEd_pap5xGAs8i-13aeyOxMW_7U79Oy9Zr23RQZk321WnHt_XY14uPjw4WIpGGMLtQ28W_2HNPNMSX7jpFpt_2FwM6QF6G7bd2WYe6qU9MbVhbI-aAdi1ZCPT770qbU87YDNqjwPp4VXgoFts8wm-f0wHupQWviioYIPwFd6I-pHoLghH5-QR3rbcyXVnQhBhjIlFJK_FIb81B_FdrTsk3S8_8x5O-k5h69-GXy6iCfqHul_OdUI20X1qALwS3GGanrs4U9sTcJi-yRO2MvgHx-_DQeqfQULceq1FlCwHuAUujjA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiOTdlZjk1MGEtZGU5Ny00ZGM1LWE1NDYtYTRmYTQ2M2E0YmUxIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjBjNmM2MjliLWU3ZDQtNDZmYS04YzBjLTc5ODY5ODI3NjA1OCIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.4M6xT5SeNSn3aXTHynPysnE6I_HrccuO4BXFk-svOjfIw2rqHoQKZX-JIn7XZ2LEB5lE6utbCErOd8r7-YYT5A",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "0c6c629b-e7d4-46fa-8c0c-798698276058",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjM0NmQzNDJlLTQwN2UtNDJjZC05NjJlLTFmNDNhNzU5NDRhNyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiIwYzZjNjI5Yi1lN2Q0LTQ2ZmEtOGMwYy03OTg2OTgyNzYwNTgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.OwuCGOm-okC3EQMgKe-GYoDa2lzLnMmIncH3mOSEd_pap5xGAs8i-13aeyOxMW_7U79Oy9Zr23RQZk321WnHt_XY14uPjw4WIpGGMLtQ28W_2HNPNMSX7jpFpt_2FwM6QF6G7bd2WYe6qU9MbVhbI-aAdi1ZCPT770qbU87YDNqjwPp4VXgoFts8wm-f0wHupQWviioYIPwFd6I-pHoLghH5-QR3rbcyXVnQhBhjIlFJK_FIb81B_FdrTsk3S8_8x5O-k5h69-GXy6iCfqHul_OdUI20X1qALwS3GGanrs4U9sTcJi-yRO2MvgHx-_DQeqfQULceq1FlCwHuAUujjA
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": ""
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: ed570afc-ca24-42da-970a-fcca2402da2b
+X-Gravitee-Request-Id: ed570afc-ca24-42da-970a-fcca2402da2b
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "description": "Описание должно быть от 3 до 255 символов"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjhiNjQ1YTE5LWZiOTAtNDk5My1iYjFjLWYyZmM5MTk0ZTEyMyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI0NTc3N2Y0YS1jNjJiLTRlZWMtYWM2ZC1mZGRhYmU4MjA3M2UiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.J_duJ1oK_z8CaTkcF5DWyTwPRpbRsndKQxa0C1-O4WVXXzY7Soi3RyS1KxIKQDH5NdSpUIFRnTa_FU-rj8lE1ra9Ra3CZSSsLcrX8AjiGG0rFwJ-SD8pAdwZnwJIhpCPMRVgb3F2LXtjYAFswn-JC3OyZzFqKDzPpf4jX6_Fhla9qdsTU6tXRkY_1Yp9TqSSJZ4LM40n_ECOgXguSdedmMM8ndZoDtNH4DUCSvH6JhMHGBVyEnbOoG5x-4FIqHX4w351MhW00E-TTb3NuEP7TYxEXU8-Uqj_2TfzQSpQD5pNZmXHaYYKQrrm0uilwENgKjMhHaOH1w50ud-h-H0cQA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiNGFhZjgyZDktNzVhMy00MDVkLWI5NzAtYTRmOWIzOWEzZGNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjQ1Nzc3ZjRhLWM2MmItNGVlYy1hYzZkLWZkZGFiZTgyMDczZSIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.Au8Z4A-hOf1En7NGlrFG8JLnhR5mniYcE-O-yURGWBSbfoHXabA-RDe319FwREecyh4Nv-U0HJMfLi1LMHPxeA",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "45777f4a-c62b-4eec-ac6d-fddabe82073e",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjhiNjQ1YTE5LWZiOTAtNDk5My1iYjFjLWYyZmM5MTk0ZTEyMyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI0NTc3N2Y0YS1jNjJiLTRlZWMtYWM2ZC1mZGRhYmU4MjA3M2UiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.J_duJ1oK_z8CaTkcF5DWyTwPRpbRsndKQxa0C1-O4WVXXzY7Soi3RyS1KxIKQDH5NdSpUIFRnTa_FU-rj8lE1ra9Ra3CZSSsLcrX8AjiGG0rFwJ-SD8pAdwZnwJIhpCPMRVgb3F2LXtjYAFswn-JC3OyZzFqKDzPpf4jX6_Fhla9qdsTU6tXRkY_1Yp9TqSSJZ4LM40n_ECOgXguSdedmMM8ndZoDtNH4DUCSvH6JhMHGBVyEnbOoG5x-4FIqHX4w351MhW00E-TTb3NuEP7TYxEXU8-Uqj_2TfzQSpQD5pNZmXHaYYKQrrm0uilwENgKjMhHaOH1w50ud-h-H0cQA
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "Те"
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: fb4e3afc-b90d-4f77-8e3a-fcb90d3f77f2
+X-Gravitee-Request-Id: fb4e3afc-b90d-4f77-8e3a-fcb90d3f77f2
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "description": "Описание должно быть от 3 до 255 символов"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOmQ5N2Y0Y2ZiLWNlY2ItNDc2OS1hYWFiLTcyMDdkZDhjNjQwNCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI2ZWVkYjEzNi0xNzBiLTQzMmQtOTdiYy05MGU5M2UxOWZhMDAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.J0K0eGHFHN0y9UFwZSkNWJ0FKV3jmdj0jyUu7Zte1IlvV9VL8VyZfzLh026ZCzs9Ne7zs3jXj0CcXR7w2DvX_y7kjjNIgslDuJgbynhz5T8zv8Evngo2FrCixB375jOD9Xkqmza6OHIuJx0uADh_e_0r_dbcrpeGo3qIHCY8Td7XP7Qps7urHCO4ddmW7VlGmIIG697cQWkEg-xX75GDvzi10487CeVFgs887fw7lAhsQy1oKt3pwXofHr68SQOcfGK4loFDTAGRvWpnI76Je7s2XFVUBaPDXrdUaYDxzyOXqB8y7jOX6AvfjP5z5tvhTuD9Eoo91vX-F9KgTbHyCg",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiOTAyMzhiMWUtNGJhMS00YTRiLThlYjUtODBhODMyMTU2ZGY2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjZlZWRiMTM2LTE3MGItNDMyZC05N2JjLTkwZTkzZTE5ZmEwMCIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.TCo9YlTeaFxcV-VkbY5Aja4hvOviQrPuD6iPClMPNp3v9e5mdDuoscH7aWej7mda_Gwv_eRwpTVx4BEUuWSs5A",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "6eedb136-170b-432d-97bc-90e93e19fa00",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOmQ5N2Y0Y2ZiLWNlY2ItNDc2OS1hYWFiLTcyMDdkZDhjNjQwNCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI2ZWVkYjEzNi0xNzBiLTQzMmQtOTdiYy05MGU5M2UxOWZhMDAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.J0K0eGHFHN0y9UFwZSkNWJ0FKV3jmdj0jyUu7Zte1IlvV9VL8VyZfzLh026ZCzs9Ne7zs3jXj0CcXR7w2DvX_y7kjjNIgslDuJgbynhz5T8zv8Evngo2FrCixB375jOD9Xkqmza6OHIuJx0uADh_e_0r_dbcrpeGo3qIHCY8Td7XP7Qps7urHCO4ddmW7VlGmIIG697cQWkEg-xX75GDvzi10487CeVFgs887fw7lAhsQy1oKt3pwXofHr68SQOcfGK4loFDTAGRvWpnI76Je7s2XFVUBaPDXrdUaYDxzyOXqB8y7jOX6AvfjP5z5tvhTuD9Eoo91vX-F9KgTbHyCg
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 3a493321-86fe-41de-8933-2186fe81de8d
+X-Gravitee-Request-Id: 3a493321-86fe-41de-8933-2186fe81de8d
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "description": "Описание должно быть от 3 до 255 символов"
+    }
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjcwMjAzZTYzLTBmMGQtNDc1YS05ZDNiLTdjODIyNmNiOWEyOSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJhMjQ3MjAzYS1jZWI4LTRlZjQtODcxNS1lY2Q0NDU4YWRlMzYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.D893FZhXcpbD23PtkN-5NF1y7_JYeG5J-SS2Hy2GeoSWLv0CXgHRIYBgG7TxRABhkYBh54V5tjFvhKrVzINKc3LpoxjjOMviCHzvbg8QOmrARq8zegviXt4ssT6JEDjV7qCItHr9PO315PJF35enW-qBLD7d5kSiKqOWo7KBpkBZupW8cycNIK6b9Zmbc5wht7yxuHftX-eE8EI2aYYoTfgZUgjrs1uu1C6MLxAqir06SEVySb8wEO5vjg7p6Sb2PHYEu976cN2XG_IQOOTpscJ4y3JZLuTJUskZ-FB5dsdpUGLebGOX57Qo9eWUw72wMPa_eM_Q_4dn6DmfmpLroA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiNDJlNTUzN2YtMGJmZi00Nzk0LTlkODUtZWY4YWYwOThiZTZiIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6ImEyNDcyMDNhLWNlYjgtNGVmNC04NzE1LWVjZDQ0NThhZGUzNiIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.0GFfHVTl3rCJ8IoSu7u2zsLAAjXKQ7nFXW20ilF2X2_9eZFUevUeH1GbGK-cZs_PSdAEKE2aSyMrLDJBH3J0Rw",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "a247203a-ceb8-4ef4-8715-ecd4458ade36",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOjcwMjAzZTYzLTBmMGQtNDc1YS05ZDNiLTdjODIyNmNiOWEyOSIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiJhMjQ3MjAzYS1jZWI4LTRlZjQtODcxNS1lY2Q0NDU4YWRlMzYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.D893FZhXcpbD23PtkN-5NF1y7_JYeG5J-SS2Hy2GeoSWLv0CXgHRIYBgG7TxRABhkYBh54V5tjFvhKrVzINKc3LpoxjjOMviCHzvbg8QOmrARq8zegviXt4ssT6JEDjV7qCItHr9PO315PJF35enW-qBLD7d5kSiKqOWo7KBpkBZupW8cycNIK6b9Zmbc5wht7yxuHftX-eE8EI2aYYoTfgZUgjrs1uu1C6MLxAqir06SEVySb8wEO5vjg7p6Sb2PHYEu976cN2XG_IQOOTpscJ4y3JZLuTJUskZ-FB5dsdpUGLebGOX57Qo9eWUw72wMPa_eM_Q_4dn6DmfmpLroA
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": null
+}
+HTTP/1.1 400 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 14486842-4f92-4a6b-8868-424f92da6b5e
+X-Gravitee-Request-Id: 14486842-4f92-4a6b-8868-424f92da6b5e
+
+{
+    "error": "Validation Failed",
+    "errorMessage": {
+        "description": "Описание обязательно для заполнения"
+    }
+}
+================
+Получаем токен: Некорректный токен
+================
+================
+Получили токен: incorrect_...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer incorrect_token_1782561622839
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json, application/javascript, text/javascript, text/json
+Content-Length: 114
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+X-Gravitee-Transaction-Id: 8f90d161-d7a7-4b30-90d1-61d7a77b3027
+X-Gravitee-Request-Id: 8f90d161-d7a7-4b30-90d1-61d7a77b3027
+
+{
+  "error": "Authorization error",
+  "errorMessage": {
+    "message": "Ошибка авторизации"
+  }
+}
+================
+Получаем токен: Токен пользователя
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=first_user
+				password=123
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 2373
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOmMyNWE0ODAxLTE4ZjAtNDc0MS1hNDgyLTYwM2MzNTA1NWY0NyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyY2U3ZGIyOS0wY2YxLTRlZTQtYTQ1Ni00NTAxMjFlOThmMTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI2YjJhM2VjNS01MzBkLTRhNWQtYWMxMy00ODI4Yzk4Y2VlZjYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImRtaXRyaXkgY2hlemdvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZmlyc3RfdXNlciIsImdpdmVuX25hbWUiOiJkbWl0cml5IiwiZmFtaWx5X25hbWUiOiJjaGV6Z28iLCJlbWFpbCI6ImRpbWEuY2hlemdhbm92QG1haWwucnUifQ.GR8RWqCaU4aXmtyBQhdri4oxyTSP1o8fUxhCsxtuVBZmkO5KV2-WzQoCVkxF0SiKa_5z1m5LQ_9uG1IeDrKnTXwIuJTmoE0nESlcZvJeciaWBFZBnUnYvCGJxzjuB3dQPG2LcT4f0odG_y5_ao5Znx8JAJAxXjDiEquXx3o4CJz5jMQ9FzGrUyixNqka7zDAyKRStkKRgtgNJI13SNCQ-xDFsEVc3Pio_faiUceZmSfXYqw1vFvew0q_GCPBJAk4kQXfWKOzserCinJ3wPZQm1DL3646YM1FvHIscTPNMP36kTxHpnpG45wG9TOim8kTjThs0izxuIHP074CsZg0Ag",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoiMjdkYTMxZjEtNjZjNS00MWVkLThjYzYtYjVkYmMxNWEzOWM0IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiMmNlN2RiMjktMGNmMS00ZWU0LWE0NTYtNDUwMTIxZTk4ZjE5IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjZiMmEzZWM1LTUzMGQtNGE1ZC1hYzEzLTQ4MjhjOThjZWVmNiIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.PGToNq5wFp05tWckMn8jWwml3uel9YHrrqzcg4L_CnOH7nIFgT9eh0GBeHZ-kXaLK0Cv1Xlh3YCGBSp-QrK84A",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "6b2a3ec5-530d-4a5d-ac13-4828c98ceef6",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjIsImlhdCI6MTc4MjU2MTYyMiwianRpIjoib25ydHJvOmMyNWE0ODAxLTE4ZjAtNDc0MS1hNDgyLTYwM2MzNTA1NWY0NyIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyY2U3ZGIyOS0wY2YxLTRlZTQtYTQ1Ni00NTAxMjFlOThmMTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI2YjJhM2VjNS01MzBkLTRhNWQtYWMxMy00ODI4Yzk4Y2VlZjYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImRtaXRyaXkgY2hlemdvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZmlyc3RfdXNlciIsImdpdmVuX25hbWUiOiJkbWl0cml5IiwiZmFtaWx5X25hbWUiOiJjaGV6Z28iLCJlbWFpbCI6ImRpbWEuY2hlemdhbm92QG1haWwucnUifQ.GR8RWqCaU4aXmtyBQhdri4oxyTSP1o8fUxhCsxtuVBZmkO5KV2-WzQoCVkxF0SiKa_5z1m5LQ_9uG1IeDrKnTXwIuJTmoE0nESlcZvJeciaWBFZBnUnYvCGJxzjuB3dQPG2LcT4f0odG_y5_ao5Znx8JAJAxXjDiEquXx3o4CJz5jMQ9FzGrUyixNqka7zDAyKRStkKRgtgNJI13SNCQ-xDFsEVc3Pio_faiUceZmSfXYqw1vFvew0q_GCPBJAk4kQXfWKOzserCinJ3wPZQm1DL3646YM1FvHIscTPNMP36kTxHpnpG45wG9TOim8kTjThs0izxuIHP074CsZg0Ag
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:22 GMT
+Content-Type: application/json
+Content-Length: 78
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+X-Gravitee-Transaction-Id: 48f3cf10-f901-44d1-b3cf-10f901c4d16a
+X-Gravitee-Request-Id: 48f3cf10-f901-44d1-b3cf-10f901c4d16a
+
+{
+    "message": "User is not allowed to access this route.",
+    "http_status_code": 403
+}
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOmEzYTU0MzgyLTNhYjMtNGYwMS1hYTI5LTQ4NmJmMTVhNDhlZCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiIxNGVhZTNiYi0xOGFiLTRiNTYtYjAwZC1jZjkwOWUwOTczZDkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.Fagz1LvS43aX0awvV5fvfx07yk8AiVvz6dvQdp17VZ83celUZJvzawdDK4NUOfHzyDSVfuBvz_D7KXXHtQ7x7QkvLGBJl0WdPFHWPpzb1SIXaCPupCDmcvmYW5BwAjv7TQRyLnC4czjsphhtrKbV2u6opZrKMf165EskmiV4q_X8wPmPGpvBm-FDo-exw4XjETxp2eE4wWBE-Bzp-OYxBaYBiLSmpTznb0zYE-O4fo7bRNEFdOjRkPCbFO_pHXorLp6LimWrJDYV7cnatpJsQAL70nxE86HMX7JGCwP4NyFB3LONCkusgj45kFqt6oXVS9ncTHbFDWmyg2-QS-Ssog",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoiYWU1ZGJlN2UtY2RmMi00MmYxLTk5NGUtY2I5ZDgzZDQ4OTllIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjE0ZWFlM2JiLTE4YWItNGI1Ni1iMDBkLWNmOTA5ZTA5NzNkOSIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.RIYsoXWjHYEaxhei2ENyRSPgtTmj0CTZ1dRjd4rXMTF6929VWliYDw3XYCiR27u0K83aIhkAAyu0_tieMf275A",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "14eae3bb-18ab-4b56-b00d-cf909e0973d9",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOmEzYTU0MzgyLTNhYjMtNGYwMS1hYTI5LTQ4NmJmMTVhNDhlZCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiIxNGVhZTNiYi0xOGFiLTRiNTYtYjAwZC1jZjkwOWUwOTczZDkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.Fagz1LvS43aX0awvV5fvfx07yk8AiVvz6dvQdp17VZ83celUZJvzawdDK4NUOfHzyDSVfuBvz_D7KXXHtQ7x7QkvLGBJl0WdPFHWPpzb1SIXaCPupCDmcvmYW5BwAjv7TQRyLnC4czjsphhtrKbV2u6opZrKMf165EskmiV4q_X8wPmPGpvBm-FDo-exw4XjETxp2eE4wWBE-Bzp-OYxBaYBiLSmpTznb0zYE-O4fo7bRNEFdOjRkPCbFO_pHXorLp6LimWrJDYV7cnatpJsQAL70nxE86HMX7JGCwP4NyFB3LONCkusgj45kFqt6oXVS9ncTHbFDWmyg2-QS-Ssog
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 200 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: c2f4ac8b-5c43-44be-b4ac-8b5c4384be66
+X-Gravitee-Request-Id: c2f4ac8b-5c43-44be-b4ac-8b5c4384be66
+
+{
+    "id": 81,
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+Request method:	POST
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOmEzYTU0MzgyLTNhYjMtNGYwMS1hYTI5LTQ4NmJmMTVhNDhlZCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiIxNGVhZTNiYi0xOGFiLTRiNTYtYjAwZC1jZjkwOWUwOTczZDkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.Fagz1LvS43aX0awvV5fvfx07yk8AiVvz6dvQdp17VZ83celUZJvzawdDK4NUOfHzyDSVfuBvz_D7KXXHtQ7x7QkvLGBJl0WdPFHWPpzb1SIXaCPupCDmcvmYW5BwAjv7TQRyLnC4czjsphhtrKbV2u6opZrKMf165EskmiV4q_X8wPmPGpvBm-FDo-exw4XjETxp2eE4wWBE-Bzp-OYxBaYBiLSmpTznb0zYE-O4fo7bRNEFdOjRkPCbFO_pHXorLp6LimWrJDYV7cnatpJsQAL70nxE86HMX7JGCwP4NyFB3LONCkusgj45kFqt6oXVS9ncTHbFDWmyg2-QS-Ssog
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Тестовый бренд",
+    "description": "Тестовый бренд для проверки создания нового бренда детали"
+}
+HTTP/1.1 409 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 4474c95a-b55f-4a89-b4c9-5ab55fba8971
+X-Gravitee-Request-Id: 4474c95a-b55f-4a89-b4c9-5ab55fba8971
+
+{
+    "error": "Conflict",
+    "errorMessage": {
+        "message": "Бренд детали телескопа с таким именем уже существует"
+    }
+}
+Request method:	DELETE
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail/81
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOmEzYTU0MzgyLTNhYjMtNGYwMS1hYTI5LTQ4NmJmMTVhNDhlZCIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiIxNGVhZTNiYi0xOGFiLTRiNTYtYjAwZC1jZjkwOWUwOTczZDkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.Fagz1LvS43aX0awvV5fvfx07yk8AiVvz6dvQdp17VZ83celUZJvzawdDK4NUOfHzyDSVfuBvz_D7KXXHtQ7x7QkvLGBJl0WdPFHWPpzb1SIXaCPupCDmcvmYW5BwAjv7TQRyLnC4czjsphhtrKbV2u6opZrKMf165EskmiV4q_X8wPmPGpvBm-FDo-exw4XjETxp2eE4wWBE-Bzp-OYxBaYBiLSmpTznb0zYE-O4fo7bRNEFdOjRkPCbFO_pHXorLp6LimWrJDYV7cnatpJsQAL70nxE86HMX7JGCwP4NyFB3LONCkusgj45kFqt6oXVS9ncTHbFDWmyg2-QS-Ssog
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: eb1e0dce-d341-4e40-9e0d-ced341ae400a
+X-Gravitee-Request-Id: eb1e0dce-d341-4e40-9e0d-ced341ae400a
+================
+Получаем токен: Токен администратора
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=chezgo_admin
+				password=93569356demdimA!
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Content-Length: 2365
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOjMzNWY1OTQwLTMyM2UtNGVmNS05NWNhLWQ3MWRkOTE1MDg1MiIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI5Mzc2ZTgwMi02OTJmLTQ4YWEtOTNjNC04NzEyNGFhNTM4MDgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.JwPoSj_A_io8ZjTfvdJK1c06-CdfF3t30_5SQjDR6J1rO2w5ning06XQywBFH-ljWBOmTFH95rCLFJLMQXopjRTqIvvU8asDC5JG-UvDwJ4bVNmKki-qFVOpWntmxVrgD79WnngEQaEHq_2BPI5fyl1PpZ9WxfwEwO_M688fNgVYXRxhW92PK-jToW3XyyWP79vnbyFCVRWDnVmnXEfAnficTKjxvuXTjl3pgVybJ4-laJUgdwOOpDaMhf-_xU_POAHYR203ynqarx9NOLcnp8kq4eEpje4IXxF3qCmSAo3RuKLSPZzlTZfb2P-OIf2xVebCfhxp-N3534EEBcIWCg",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoiNDBkYWQ3ZjEtMjVjMy00MjFhLTlmMTItYTUzYmEzZGZhYzE2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiYWM3MWI4MmEtNTMyMi00MTk0LTkwMDQtMjg0ZDgyNDExMjc2IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjkzNzZlODAyLTY5MmYtNDhhYS05M2M0LTg3MTI0YWE1MzgwOCIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.1D1QGuzWR7yVrV3LQ-E3nG5YK-MvVLEbIyDyJ3MqhkgkTnGUolPlCw4777xtbSYpIkNucLxY7z76-FhtJ6GQnA",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "9376e802-692f-48aa-93c4-87124aa53808",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	GET
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOjMzNWY1OTQwLTMyM2UtNGVmNS05NWNhLWQ3MWRkOTE1MDg1MiIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJhYzcxYjgyYS01MzIyLTQxOTQtOTAwNC0yODRkODI0MTEyNzYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI5Mzc2ZTgwMi02OTJmLTQ4YWEtOTNjNC04NzEyNGFhNTM4MDgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJkaW1rYSBkaW1rYSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNoZXpnb19hZG1pbiIsImdpdmVuX25hbWUiOiJkaW1rYSIsImZhbWlseV9uYW1lIjoiZGlta2EiLCJlbWFpbCI6ImRpbWthQG1haWwucnUifQ.JwPoSj_A_io8ZjTfvdJK1c06-CdfF3t30_5SQjDR6J1rO2w5ning06XQywBFH-ljWBOmTFH95rCLFJLMQXopjRTqIvvU8asDC5JG-UvDwJ4bVNmKki-qFVOpWntmxVrgD79WnngEQaEHq_2BPI5fyl1PpZ9WxfwEwO_M688fNgVYXRxhW92PK-jToW3XyyWP79vnbyFCVRWDnVmnXEfAnficTKjxvuXTjl3pgVybJ4-laJUgdwOOpDaMhf-_xU_POAHYR203ynqarx9NOLcnp8kq4eEpje4IXxF3qCmSAo3RuKLSPZzlTZfb2P-OIf2xVebCfhxp-N3534EEBcIWCg
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 3689265d-2a08-469c-8926-5d2a08269ca7
+X-Gravitee-Request-Id: 3689265d-2a08-469c-8926-5d2a08269ca7
+
+[
+    {
+        "id": 1,
+        "name": "Levenhuk",
+        "description": "Levenhuk — это американская компания, специализирующаяся на производстве оптических приборов, таких как микроскопы, телескопы, бинокли, монокуляры и зрительные трубы."
+    },
+    {
+        "id": 2,
+        "name": "Meade",
+        "description": "Компания, производящая телескопы с передовыми оптическими технологиями и высоким качеством изображения."
+    },
+    {
+        "id": 3,
+        "name": "Sky-Watcher",
+        "description": "Британский бренд с фабрикой в Китае"
+    },
+    {
+        "id": 4,
+        "name": "Celestron",
+        "description": "Американская компания, производящая телескопы, бинокуляры, микроскопы и аксессуары для своей продукции."
+    },
+    {
+        "id": 5,
+        "name": "Levenhuk",
+        "description": null
+    },
+    {
+        "id": 6,
+        "name": "Celestron",
+        "description": null
+    },
+    {
+        "id": 7,
+        "name": "Sky-Watcher",
+        "description": null
+    },
+    {
+        "id": 8,
+        "name": "Baader Planetarium",
+        "description": null
+    },
+    {
+        "id": 9,
+        "name": "Explore Scientific",
+        "description": null
+    },
+    {
+        "id": 10,
+        "name": "ZWO",
+        "description": null
+    },
+    {
+        "id": 11,
+        "name": "Tele Vue",
+        "description": null
+    },
+    {
+        "id": 12,
+        "name": "William Optics",
+        "description": null
+    },
+    {
+        "id": 13,
+        "name": "Meade",
+        "description": null
+    },
+    {
+        "id": 14,
+        "name": "Orion",
+        "description": null
+    },
+    {
+        "id": 15,
+        "name": "QHYCCD",
+        "description": null
+    },
+    {
+        "id": 16,
+        "name": "Altair Astro",
+        "description": null
+    },
+    {
+        "id": 17,
+        "name": "Stellarvue",
+        "description": null
+    },
+    {
+        "id": 18,
+        "name": "Takahashi",
+        "description": null
+    },
+    {
+        "id": 19,
+        "name": "Vixen",
+        "description": null
+    },
+    {
+        "id": 20,
+        "name": "Lunt Solar Systems",
+        "description": null
+    },
+    {
+        "id": 21,
+        "name": "DayStar",
+        "description": null
+    },
+    {
+        "id": 22,
+        "name": "APM",
+        "description": null
+    },
+    {
+        "id": 23,
+        "name": "TS-Optics",
+        "description": null
+    },
+    {
+        "id": 24,
+        "name": "Bresser",
+        "description": null
+    },
+    {
+        "id": 27,
+        "name": "Telrad",
+        "description": "Беспроводной коллиматорный искатель"
+    },
+    {
+        "id": 28,
+        "name": "Rigel",
+        "description": "Компактный коллиматорный искатель"
+    },
+    {
+        "id": 29,
+        "name": "iOptron",
+        "description": "Монтировки премиум-класса"
+    },
+    {
+        "id": 30,
+        "name": "Astronomik",
+        "description": "Высококачественные фильтры"
+    },
+    {
+        "id": 31,
+        "name": "Lumicon",
+        "description": "Фильтры глубокого космоса"
+    },
+    {
+        "id": 32,
+        "name": "MoonLite",
+        "description": "Фокусёры премиум"
+    },
+    {
+        "id": 33,
+        "name": "Hotech",
+        "description": "Самокорректирующаяся оптика"
+    },
+    {
+        "id": 34,
+        "name": "Pegasus Astro",
+        "description": "Аксессуары для астрофотографии"
+    },
+    {
+        "id": 35,
+        "name": "PrimaLuceLab",
+        "description": "Оборудование для автоматизации"
+    },
+    {
+        "id": 36,
+        "name": "Losmandy",
+        "description": ""
+    },
+    {
+        "id": 37,
+        "name": "Kendrick",
+        "description": "Системы обогрева оптики"
+    },
+    {
+        "id": 38,
+        "name": "Astrozap",
+        "description": "Аксессуары для астрофотографии"
+    },
+    {
+        "id": 39,
+        "name": "DewBuster",
+        "description": "Контроллеры обогрева"
+    },
+    {
+        "id": 40,
+        "name": "Seymour Solar",
+        "description": "Солнечные фильтры"
+    },
+    {
+        "id": 41,
+        "name": "Shelyak Instruments",
+        "description": ""
+    },
+    {
+        "id": 42,
+        "name": "Geoptik",
+        "description": "Аксессуары для телескопов"
+    },
+    {
+        "id": 43,
+        "name": "Oklop",
+        "description": "Сумки и чехлы для оптики"
+    }
+]
+================
+Получаем токен: Токен пользователя
+================
+Request method:	POST
+Request URI:	https://keycloak.our-galaxy.space/realms/general_realm/protocol/openid-connect/token
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	grant_type=password
+				client_id=stargazer
+				username=first_user
+				password=123
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Content-Length: 2373
+Connection: keep-alive
+Cache-Control: no-store
+Pragma: no-cache
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOjE5MWRmZDQzLWE1YTItNGM1MS05ZDc1LTc0MjI0YzE4YzdlNiIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyY2U3ZGIyOS0wY2YxLTRlZTQtYTQ1Ni00NTAxMjFlOThmMTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI0MmFkZTA1Yi0yZjg0LTRjM2QtYTA5MC03M2QxYTllMjA4NWEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImRtaXRyaXkgY2hlemdvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZmlyc3RfdXNlciIsImdpdmVuX25hbWUiOiJkbWl0cml5IiwiZmFtaWx5X25hbWUiOiJjaGV6Z28iLCJlbWFpbCI6ImRpbWEuY2hlemdhbm92QG1haWwucnUifQ.h7x_7u4aAt8mYiAvirm_JOb_8nluzttNIH0UN9vf2GmXTJImHyEGj7acgU-NE1ahJzw_D0fpPioekA0cOIAtw09inM6Khf0OLJiSX_NplCCGHdro_g3Xw8aJlONlD7-fioJAgM5GUglS3_FG4YCod6_UtYWh08RdYUGjsifAW2Ecr20sV13xvkuNLOTbomeuiSrOaVcet9Jt3zuAy1ZoSV6E36aBlWIhPjotFbgNMCutEa9jKD9NJ4t9dqxc128C82KRk9w7EEi-K1YTU40niH1Zkds0vsBBl7VMu-LVALi2yrgXN_mcGUsMG7uJkEKhU2i0xhxNkMLlkGI9Hivn2w",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4ZTZlMzE4Zi02NjYwLTQyMzYtYmNjNi1kMTdiOGY0ODgxNWYifQ.eyJleHAiOjE3ODI1NjM0MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoiZjY0ZTRlZmEtNzQxYy00ZWU3LTk0ZjUtZDNkMzU0ZWE4NDZmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwiYXVkIjoiaHR0cHM6Ly9rZXljbG9hay5vdXItZ2FsYXh5LnNwYWNlL3JlYWxtcy9nZW5lcmFsX3JlYWxtIiwic3ViIjoiMmNlN2RiMjktMGNmMS00ZWU0LWE0NTYtNDUwMTIxZTk4ZjE5IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InN0YXJnYXplciIsInNpZCI6IjQyYWRlMDViLTJmODQtNGMzZC1hMDkwLTczZDFhOWUyMDg1YSIsInNjb3BlIjoiYWNyIHJvbGVzIGVtYWlsIHdlYi1vcmlnaW5zIHByb2ZpbGUgYmFzaWMifQ.JLZgFrNas5nSNCFQnyqJVGgeTgPr8rxHsKpl6uYD_vOvxyt7-wh1uShhbm0QcequMXTDX7q4-DUVEAJPSuPDEQ",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "42ade05b-2f84-4c3d-a090-73d1a9e2085a",
+    "scope": "email profile"
+}
+================
+Получили токен: eyJhbGciOi...
+================
+Request method:	GET
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJfMTVKTEdzNzhxYXR0TXRQdm9iYmR6V0RSVkZ0dERvcFdDLVdhdlp6Um80In0.eyJleHAiOjE3ODI1NjE5MjMsImlhdCI6MTc4MjU2MTYyMywianRpIjoib25ydHJvOjE5MWRmZDQzLWE1YTItNGM1MS05ZDc1LTc0MjI0YzE4YzdlNiIsImlzcyI6Imh0dHBzOi8va2V5Y2xvYWsub3VyLWdhbGF4eS5zcGFjZS9yZWFsbXMvZ2VuZXJhbF9yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyY2U3ZGIyOS0wY2YxLTRlZTQtYTQ1Ni00NTAxMjFlOThmMTkiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFyZ2F6ZXIiLCJzaWQiOiI0MmFkZTA1Yi0yZjg0LTRjM2QtYTA5MC03M2QxYTllMjA4NWEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vc3RhcmdhemVyLm91ci1nYWxheHkuc3BhY2UiLCIvKiIsImh0dHA6Ly9sb2NhbGhvc3Q6NTE3MyJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWdlbmVyYWxfcmVhbG0iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImRtaXRyaXkgY2hlemdvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZmlyc3RfdXNlciIsImdpdmVuX25hbWUiOiJkbWl0cml5IiwiZmFtaWx5X25hbWUiOiJjaGV6Z28iLCJlbWFpbCI6ImRpbWEuY2hlemdhbm92QG1haWwucnUifQ.h7x_7u4aAt8mYiAvirm_JOb_8nluzttNIH0UN9vf2GmXTJImHyEGj7acgU-NE1ahJzw_D0fpPioekA0cOIAtw09inM6Khf0OLJiSX_NplCCGHdro_g3Xw8aJlONlD7-fioJAgM5GUglS3_FG4YCod6_UtYWh08RdYUGjsifAW2Ecr20sV13xvkuNLOTbomeuiSrOaVcet9Jt3zuAy1ZoSV6E36aBlWIhPjotFbgNMCutEa9jKD9NJ4t9dqxc128C82KRk9w7EEi-K1YTU40niH1Zkds0vsBBl7VMu-LVALi2yrgXN_mcGUsMG7uJkEKhU2i0xhxNkMLlkGI9Hivn2w
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Gravitee-Transaction-Id: 308289c9-f4a5-49eb-8289-c9f4a5b9ebd8
+X-Gravitee-Request-Id: 308289c9-f4a5-49eb-8289-c9f4a5b9ebd8
+
+[
+    {
+        "id": 1,
+        "name": "Levenhuk",
+        "description": "Levenhuk — это американская компания, специализирующаяся на производстве оптических приборов, таких как микроскопы, телескопы, бинокли, монокуляры и зрительные трубы."
+    },
+    {
+        "id": 2,
+        "name": "Meade",
+        "description": "Компания, производящая телескопы с передовыми оптическими технологиями и высоким качеством изображения."
+    },
+    {
+        "id": 3,
+        "name": "Sky-Watcher",
+        "description": "Британский бренд с фабрикой в Китае"
+    },
+    {
+        "id": 4,
+        "name": "Celestron",
+        "description": "Американская компания, производящая телескопы, бинокуляры, микроскопы и аксессуары для своей продукции."
+    },
+    {
+        "id": 5,
+        "name": "Levenhuk",
+        "description": null
+    },
+    {
+        "id": 6,
+        "name": "Celestron",
+        "description": null
+    },
+    {
+        "id": 7,
+        "name": "Sky-Watcher",
+        "description": null
+    },
+    {
+        "id": 8,
+        "name": "Baader Planetarium",
+        "description": null
+    },
+    {
+        "id": 9,
+        "name": "Explore Scientific",
+        "description": null
+    },
+    {
+        "id": 10,
+        "name": "ZWO",
+        "description": null
+    },
+    {
+        "id": 11,
+        "name": "Tele Vue",
+        "description": null
+    },
+    {
+        "id": 12,
+        "name": "William Optics",
+        "description": null
+    },
+    {
+        "id": 13,
+        "name": "Meade",
+        "description": null
+    },
+    {
+        "id": 14,
+        "name": "Orion",
+        "description": null
+    },
+    {
+        "id": 15,
+        "name": "QHYCCD",
+        "description": null
+    },
+    {
+        "id": 16,
+        "name": "Altair Astro",
+        "description": null
+    },
+    {
+        "id": 17,
+        "name": "Stellarvue",
+        "description": null
+    },
+    {
+        "id": 18,
+        "name": "Takahashi",
+        "description": null
+    },
+    {
+        "id": 19,
+        "name": "Vixen",
+        "description": null
+    },
+    {
+        "id": 20,
+        "name": "Lunt Solar Systems",
+        "description": null
+    },
+    {
+        "id": 21,
+        "name": "DayStar",
+        "description": null
+    },
+    {
+        "id": 22,
+        "name": "APM",
+        "description": null
+    },
+    {
+        "id": 23,
+        "name": "TS-Optics",
+        "description": null
+    },
+    {
+        "id": 24,
+        "name": "Bresser",
+        "description": null
+    },
+    {
+        "id": 27,
+        "name": "Telrad",
+        "description": "Беспроводной коллиматорный искатель"
+    },
+    {
+        "id": 28,
+        "name": "Rigel",
+        "description": "Компактный коллиматорный искатель"
+    },
+    {
+        "id": 29,
+        "name": "iOptron",
+        "description": "Монтировки премиум-класса"
+    },
+    {
+        "id": 30,
+        "name": "Astronomik",
+        "description": "Высококачественные фильтры"
+    },
+    {
+        "id": 31,
+        "name": "Lumicon",
+        "description": "Фильтры глубокого космоса"
+    },
+    {
+        "id": 32,
+        "name": "MoonLite",
+        "description": "Фокусёры премиум"
+    },
+    {
+        "id": 33,
+        "name": "Hotech",
+        "description": "Самокорректирующаяся оптика"
+    },
+    {
+        "id": 34,
+        "name": "Pegasus Astro",
+        "description": "Аксессуары для астрофотографии"
+    },
+    {
+        "id": 35,
+        "name": "PrimaLuceLab",
+        "description": "Оборудование для автоматизации"
+    },
+    {
+        "id": 36,
+        "name": "Losmandy",
+        "description": ""
+    },
+    {
+        "id": 37,
+        "name": "Kendrick",
+        "description": "Системы обогрева оптики"
+    },
+    {
+        "id": 38,
+        "name": "Astrozap",
+        "description": "Аксессуары для астрофотографии"
+    },
+    {
+        "id": 39,
+        "name": "DewBuster",
+        "description": "Контроллеры обогрева"
+    },
+    {
+        "id": 40,
+        "name": "Seymour Solar",
+        "description": "Солнечные фильтры"
+    },
+    {
+        "id": 41,
+        "name": "Shelyak Instruments",
+        "description": ""
+    },
+    {
+        "id": 42,
+        "name": "Geoptik",
+        "description": "Аксессуары для телескопов"
+    },
+    {
+        "id": 43,
+        "name": "Oklop",
+        "description": "Сумки и чехлы для оптики"
+    }
+]
+================
+Получаем токен: Некорректный токен
+================
+================
+Получили токен: incorrect_...
+================
+Request method:	GET
+Request URI:	https://api.our-galaxy.space/stargazer-service/v1/brand-detail
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer incorrect_token_1782561623431
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sat, 27 Jun 2026 12:00:23 GMT
+Content-Type: application/json, application/javascript, text/javascript, text/json
+Content-Length: 114
+Connection: keep-alive
+X-Gravitee-Client-Identifier: 41c4fda073c25fd7c87369812eba5ab5a16c3443e1a6909a69f122e9fe15b0d4
+X-Gravitee-Transaction-Id: 7549c45c-78e0-490e-89c4-5c78e0990ec0
+X-Gravitee-Request-Id: 7549c45c-78e0-490e-89c4-5c78e0990ec0
+
+{
+  "error": "Authorization error",
+  "errorMessage": {
+    "message": "Ошибка авторизации"
+  }
+}
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m15[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 10.93 s[1;31m <<< FAILURE![m -- in [1mTestSuite[m
+[[1;31mERROR[m] test.detail.brand.DetailBrandTest.createDetailBrandTest[DataTestCreateDetailBrand(expectedStatusCode=200, testName=Успешный вызов, токен админа, tokenType=Токен администратора, pathSchemas=schemas/detail/brand/create-brand-success.json, responseTime=2000, nameBrand=Тестовый бренд, descriptionNameBrand=Тестовый бренд для проверки создания нового бренда детали)](1) -- Time elapsed: 7.874 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected response time was not a value less than <2000L> milliseconds, was 5326 milliseconds (5326 milliseconds).
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:131)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at test.detail.brand.DetailBrandTest.verifyResponse(DetailBrandTest.java:144)
+	at test.detail.brand.DetailBrandTest.createDetailBrandTest(DetailBrandTest.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  DetailBrandTest.createDetailBrandTest:95->verifyResponse:144 1 expectation failed.
+Expected response time was not a value less than <2000L> milliseconds, was 5326 milliseconds (5326 milliseconds).[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 15, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  13.384 s
+[[1;34mINFO[m] Finished at: 2026-06-27T15:00:23+03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:3.2.5:test[m [1m(default-test)[m on project [36mstargazer-testing-api[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/supernatural/tests/stargazer-testing-api/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Генерация Allure отчета...
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.example:stargazer-testing-api[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding stargazer-testing-api 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mallure-maven:2.12.0:report[m [1m(default-cli)[m @ [36mstargazer-testing-api[0;1m ---[m
+[[1;34mINFO[m] Allure installation directory /home/supernatural/tests/stargazer-testing-api/.allure
+[[1;34mINFO[m] Try to finding out allure 2.27.0
+[[1;34mINFO[m] Generate Allure report (report) with version 2.27.0
+[[1;34mINFO[m] Generate Allure report to /home/supernatural/tests/stargazer-testing-api/target/site/allure-maven-plugin
+[[1;34mINFO[m] Found results directory /home/supernatural/tests/stargazer-testing-api/target/allure-results
+[[1;34mINFO[m] Can't find information about categories
+[[1;34mINFO[m] Generate report to /home/supernatural/tests/stargazer-testing-api/target/site/allure-maven-plugin
+Report successfully generated to /home/supernatural/tests/stargazer-testing-api/target/site/allure-maven-plugin
+[[1;34mINFO[m] Report generated successfully.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.593 s
+[[1;34mINFO[m] Finished at: 2026-06-27T15:00:26+03:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+✅ Отчет скопирован в /home/supernatural/allure-reports/2026-06-27_15-00-01
+✅ Последний отчет обновлен: /home/supernatural/allure-reports/latest
+========================================
+❌ Тесты провалились! Код выхода: 1
+========================================

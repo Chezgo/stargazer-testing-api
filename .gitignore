@@ -40,3 +40,4 @@ Thumbs.db
 
 ### Test configuration with sensitive data ###
 src/test/resources/test.properties
+src/test/resources/test.properties
